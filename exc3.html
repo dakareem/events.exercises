@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">click me to see my color</div>
+    <div id="div2">you can also click me to see my color</div>
+
+    <script>
+        const div1 = document.querySelector("#div1");
+        div1.style.fontSize = "30px";
+        div1.style.textAlign = "center";
+        div1.addEventListener("click" ,(event) => {
+            if (div1){
+                div1.style.color = "red";
+            }
+        })
+
+
+        const div2 = document.querySelector("#div2");
+        div2.style.fontSize = "30px";
+        div2.style.textAlign = "center";
+        div2.addEventListener("click" ,(event) => {
+            if (div2){
+                div2.style.color = "green";
+            }
+        })
+
+
+    </script>
+</body>
+</html>
